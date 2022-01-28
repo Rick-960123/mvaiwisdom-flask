@@ -136,6 +136,7 @@ async def delete():
     r = await deletedb(sel,value)
     return jsonify({ "res": True }), 200
 
+
 @app.route('/submit', methods=['POST'])
 @run_async
 async def submit():
